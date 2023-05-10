@@ -5,49 +5,45 @@ function moduleProject1() {
 
   // 👇 WORK WORK BELOW THIS LINE 👇
 
-  // 👉 TASK 1
+  // 👉 TASK 1 - Add a "card" class name to cards so CSS kicks in
+  //  ✨ add your code here
+  let cards = document.querySelectorAll('section>div')
+  cards.forEach(card => card.classList.add('card'))
+
+  // 👉 TASK 2 - Build the "Quote of the Day" widget
+  //  ✨ add your code here
   const quoteContainer = document.querySelector('.quoteoftheday')
   const quoteObj = quotes[Math.floor(Math.random() * quotes.length)]
-
-  // Create the quote elements
   const authorElement = document.createElement("div")
   const textElement = document.createElement("div")
-
-  // Set the text content of the elements
   textElement.textContent = quoteObj.quote
   authorElement.textContent = `${quoteObj.author} in ${quoteObj.date || ' an unknown date'}`
-
-  // Set the attributes of the elements
-  quoteContainer.setAttribute('tabindex', '1')
-
-  // Append the elements to the container
   quoteContainer.appendChild(textElement)
   quoteContainer.appendChild(authorElement)
 
-  // 👉 TASK 2
+  // 👉 TASK 3 - Build the "Corporate Speak" widget
+  //  ✨ add your code here
   function randomWord(words) {
     return words[Math.floor(Math.random() * words.length)];
   }
-
   function generateCorporateSpeak() {
     const sentence = `We need to ${randomWord(verbs)} our ${randomWord(nouns)} ` +
       `${randomWord(adverbs)} in order to ${randomWord(verbs)} our ` +
       `${randomWord(nouns)} ${randomWord(adverbs)}.`;
     return sentence;
   }
-
   const corporateContainer = document.querySelector('.corporatespeak')
   const corporateSpeak = document.createElement('p')
-  corporateContainer.appendChild(corporateSpeak)
   corporateSpeak.textContent = generateCorporateSpeak()
-  corporateContainer.setAttribute('tabindex', '2')
+  corporateContainer.appendChild(corporateSpeak)
 
-  // 👉 TASK 3
+  // 👉 TASK 4 - Build the "Countdown" widget
+  //  ✨ add your code here
   let counter = 5
   const countdownContainer = document.querySelector('.countdown')
   const countdown = document.createElement('p')
-  countdownContainer.appendChild(countdown)
   countdown.textContent = `T-minus ${counter}...`
+  countdownContainer.appendChild(countdown)
   let id = setInterval(() => {
     if (counter === 1) {
       clearInterval(id)
@@ -56,9 +52,9 @@ function moduleProject1() {
       countdown.textContent = `T-minus ${--counter}...`
     }
   }, 1000);
-  countdownContainer.setAttribute('tabindex', '3')
 
-  // 👉 TASK 4
+  // 👉 TASK 5 - Build the "Friends" widget
+  //  ✨ add your code here
   const personContainer = document.querySelector('.friends')
   const randomIndex = Math.floor(Math.random() * people.length)
   const person = people[randomIndex]
@@ -82,6 +78,12 @@ function moduleProject1() {
   const p = document.createElement('p')
   p.textContent = sentence
   personContainer.appendChild(p)
+
+  // 👉 TASK 5 - Make it so user can tab through the widgets
+  //  ✨ add your code here
+  quoteContainer.setAttribute('tabindex', '1')
+  corporateContainer.setAttribute('tabindex', '2')
+  countdownContainer.setAttribute('tabindex', '3')
   personContainer.setAttribute('tabindex', '4')
 
   // 👆 WORK WORK ABOVE THIS LINE 👆
