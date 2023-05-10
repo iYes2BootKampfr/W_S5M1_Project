@@ -10,7 +10,7 @@ function moduleProject1() {
   let widgets = document.querySelectorAll('section>div')
   widgets.forEach(widget => widget.classList.add('widget'))
 
-  // 👉 TASK 2 - Build the "Quote of the Day" widget
+  // 👉 TASK 2 - Build a "Quote of the Day" widget
   //  ✨ add your code here
   const quoteContainer = document.querySelector('.quoteoftheday')
   const quoteObj = quotes[Math.floor(Math.random() * quotes.length)]
@@ -21,7 +21,7 @@ function moduleProject1() {
   quoteContainer.appendChild(textElement)
   quoteContainer.appendChild(authorElement)
 
-  // 👉 TASK 3 - Build the "Corporate Speak" widget
+  // 👉 TASK 3 - Build a "Corporate Speak" widget
   //  ✨ add your code here
   function randomWord(words) {
     return words[Math.floor(Math.random() * words.length)];
@@ -37,7 +37,7 @@ function moduleProject1() {
   corporateSpeak.textContent = generateCorporateSpeak()
   corporateContainer.appendChild(corporateSpeak)
 
-  // 👉 TASK 4 - Build the "Countdown" widget
+  // 👉 TASK 4 - Build a "Countdown" widget
   //  ✨ add your code here
   let counter = 5
   const countdownContainer = document.querySelector('.countdown')
@@ -53,7 +53,7 @@ function moduleProject1() {
     }
   }, 1000);
 
-  // 👉 TASK 5 - Build the "Friends" widget
+  // 👉 TASK 5 - Build a "Friends" widget
   //  ✨ add your code here
   const personContainer = document.querySelector('.friends')
   const randomIndex = Math.floor(Math.random() * people.length)
