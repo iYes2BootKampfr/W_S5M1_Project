@@ -1,4 +1,4 @@
-var quotes = [
+const quotes = [
   {
     id: 23,
     quote: "Any sufficiently advanced technology is indistinguishable from magic.",
@@ -61,7 +61,7 @@ var quotes = [
   }
 ]
 
-var adverbs = [
+const adverbs = [
   "innovatively",
   "strategically",
   "synergistically",
@@ -74,7 +74,7 @@ var adverbs = [
   "agilely"
 ]
 
-var nouns = [
+const nouns = [
   "solutions",
   "paradigms",
   "platforms",
@@ -87,7 +87,7 @@ var nouns = [
   "mindshare"
 ]
 
-var verbs = [
+const verbs = [
   "leverage",
   "optimize",
   "streamline",
@@ -100,7 +100,7 @@ var verbs = [
   "evolve"
 ]
 
-var people = [
+const people = [
   {
     "id": 23,
     "fname": "Alex",
@@ -113,7 +113,7 @@ var people = [
     "fname": "Emily",
     "lname": "Nguyen",
     "dateOfBirth": "1992-04-02",
-    "friends": [12, 13]
+    "friends": []
   },
   {
     "id": 13,
@@ -176,7 +176,7 @@ var people = [
     "fname": "Luis",
     "lname": "Gonzalez",
     "dateOfBirth": "1990-03-29",
-    "friends": [2, 7]
+    "friends": []
   },
   {
     "id": 5,
@@ -190,7 +190,7 @@ var people = [
     "fname": "William",
     "lname": "Brown",
     "dateOfBirth": "1997-12-17",
-    "friends": [5, 7]
+    "friends": [5, 7, 99]
   },
   {
     "id": 7,
@@ -204,6 +204,6 @@ var people = [
     "fname": "Daniel",
     "lname": "Garcia",
     "dateOfBirth": "1981-06-22",
-    "friends": [1]
+    "friends": []
   }
 ]
