@@ -1,3 +1,7 @@
+/* ❗ DO NOT CHANGE THIS FILE */
+/* ❗ DO NOT CHANGE THIS FILE */
+/* ❗ DO NOT CHANGE THIS FILE */
+
 const quotes = [
   {
     id: 23,
@@ -207,3 +211,6 @@ const people = [
     "friends": []
   }
 ]
+
+if (typeof module !== 'undefined' && module.exports)
+  module.exports = { quotes, adverbs, nouns, verbs, people }

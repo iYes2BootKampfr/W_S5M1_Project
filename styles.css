@@ -1,6 +1,7 @@
-/* DO NOT CHANGE THIS FILE */
-/* DO NOT CHANGE THIS FILE */
-/* DO NOT CHANGE THIS FILE */
+/* ❗ DO NOT CHANGE THIS FILE */
+/* ❗ DO NOT CHANGE THIS FILE */
+/* ❗ DO NOT CHANGE THIS FILE */
+
 @font-face {
   font-family: 'Titillium Web';
   src: url('./TitilliumWeb.ttf');
@@ -68,7 +69,7 @@ section {
 .card h3 {
   line-height: 1.8;
   font-size: 1.3em;
-  color:rgb(133, 133, 133);
+  color: rgb(133, 133, 133);
   border-bottom: 1px solid grey;
   margin-bottom: 1rem;
   transition: font-size 0.1s ease-in-out;
