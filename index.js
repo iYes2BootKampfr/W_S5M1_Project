@@ -8,22 +8,19 @@ function moduleProject1() {
   const quoteObj = quotes[Math.floor(Math.random() * quotes.length)]
 
   // Create the quote elements
-  const authorElement = document.createElement("h4")
+  const authorElement = document.createElement("div")
   const textElement = document.createElement("div")
-  const dateElement = document.createElement("div")
 
   // Set the text content of the elements
-  authorElement.textContent = quoteObj.author
   textElement.textContent = quoteObj.quote
-  dateElement.textContent = quoteObj.date || 'Unknown Date'
+  authorElement.textContent = `${quoteObj.author} in ${quoteObj.date || ' an unknown date'}`
 
   // Set the attributes of the elements
   quoteContainer.setAttribute('tabindex', '1')
 
   // Append the elements to the container
-  quoteContainer.appendChild(authorElement)
   quoteContainer.appendChild(textElement)
-  quoteContainer.appendChild(dateElement)
+  quoteContainer.appendChild(authorElement)
 }
 
 // TASK 2
